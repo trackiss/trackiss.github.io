@@ -1,0 +1,30 @@
+$breakpoints: (
+  mobile-l: 480px,
+  tablet-p: 768px,
+  tablet-l: 992px,
+  laptop: 1200px,
+) !default;
+
+@mixin mq-mobile-l {
+  @media screen and (min-width: map-get($breakpoints, mobile-l)) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-p {
+  @media screen and (min-width: map-get($breakpoints, tablet-p)) {
+    @content;
+  }
+}
+
+@mixin mq-tablet-l {
+  @media screen and (min-width: map-get($breakpoints, tablet-l)) {
+    @content;
+  }
+}
+
+@mixin mq-laptop {
+  @media screen and (min-width: map-get($breakpoints, laptop)) {
+    @content;
+  }
+}
