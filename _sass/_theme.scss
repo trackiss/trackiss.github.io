@@ -29,31 +29,3 @@ html[data-theme='true'] {
     color: invert($link-visited-color);
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  html[data-theme='true'] {
-    background-color: invert($background-color);
-    color: invert($text-color);
-
-    :link {
-      color: invert($link-default-color);
-    }
-
-    :visited {
-      color: invert($link-visited-color);
-    }
-  }
-
-  html[data-theme='false'] {
-    background-color: $background-color;
-    color: $text-color;
-
-    :link {
-      color: $link-default-color;
-    }
-
-    :visited {
-      color: $link-visited-color;
-    }
-  }
-}
