@@ -2,6 +2,7 @@ $background-color: #fff;
 $text-color: #000;
 $link-default-color: #00e;
 $link-visited-color: #551abb;
+$link-active-color: #f00;
 
 html,
 html[data-theme='false'] {
@@ -15,6 +16,11 @@ html[data-theme='false'] {
   :visited {
     color: $link-visited-color;
   }
+
+  :link:active,
+  :visited:active {
+    color: $link-active-color;
+  }
 }
 
 html[data-theme='true'] {
@@ -27,5 +33,10 @@ html[data-theme='true'] {
 
   :visited {
     color: invert($link-visited-color);
+  }
+
+  :link:active,
+  :visited:active {
+    color: invert($link-active-color);
   }
 }
