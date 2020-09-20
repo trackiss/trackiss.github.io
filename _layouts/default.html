@@ -6,9 +6,18 @@
     <meta charset="UTF-8" />
 
     <link href="https://unpkg.com/sanitize.css" rel="stylesheet" />
+    <link href="https://unpkg.com/sanitize.css/assets.css" rel="stylesheet" />
+
+    <link href="{{ '/assets/style.css' | relative_url }}" rel="stylesheet" />
   </head>
 
   <body>
     {{ content }}
+
+    <hr>
+
+    <input type="checkbox" id="theme-toggle" onclick="switchTheme()"> Night Theme
+
+    <script src="/assets/switchTheme.js"></script>
   </body>
 </html>
