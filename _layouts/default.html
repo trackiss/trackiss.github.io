@@ -14,9 +14,12 @@
   <body>
     {{ content }}
 
-    <hr>
+    <hr />
 
-    <input type="checkbox" id="theme-toggle" onclick="switchTheme()"> Night Theme
+    <label for="theme-toggle">
+      <input type="checkbox" id="theme-toggle" onclick="switchTheme()" /> Night
+      Theme
+    </label>
 
     <script src="/assets/switchTheme.js"></script>
   </body>
