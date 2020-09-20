@@ -7,4 +7,4 @@ layout: page
 
 Hello, World!
 
-[Repository](https://github.com/trackiss/trackiss.github.io)
+[Repository]({{ site.repository }}){: target="_blank" rel="noopener noreferrer" }
